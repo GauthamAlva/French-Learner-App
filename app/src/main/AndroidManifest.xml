@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.converty.lanuagelearner">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/french"
+        android:label="French"
+        android:roundIcon="@mipmap/french"
+
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".PhraseActivity"
+            android:label="Phrases"
+            android:theme="@style/AppThemepha"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+        <activity android:name=".ColoursActivity"
+            android:label="Colours"
+            android:theme="@style/AppThemecol"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+        <activity android:name=".FamilyActivity"
+            android:label="Family"
+            android:theme="@style/AppThemefam"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+        <activity android:name=".NumberActivity"
+            android:label="Numbers"
+            android:theme="@style/AppThemenum"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
